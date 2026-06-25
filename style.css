@@ -1,0 +1,118 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    animation: fadeIn 1.5s ease-in;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+h1,h2{
+    color: #333;
+}
+
+img{
+    transition: transform 0.5s;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+table, th, td{
+    border: 1px solid #ccc;
+}
+
+th, td{
+    padding: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+.bar{
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.python{
+    width: 90%;
+    background: green;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    animation: fillBar 2s;
+}
+
+@keyframes fillBar{
+    from{width:0;}
+    to{width:90%;}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+/* Dark Mode */
+.dark{
+    background-color:#121212;
+    color:white;
+}
+
+.dark h1,
+.dark h2,
+.dark p,
+.dark li,
+.dark td,
+.dark th{
+    color:white;
+}
+
+.dark table{
+    background:#222;
+}
+
+.dark a{
+    color:lightblue;
+}
+
+
+section {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+    transition: transform 0.5s;
+} 
